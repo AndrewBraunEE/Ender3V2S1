@@ -2022,7 +2022,7 @@
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
 //#define AUTO_BED_LEVELING_BILINEAR  // MRiscoC BLTouch auto level
-#define AUTO_BED_LEVELING_UBL
+#define AUTO_BED_LEVELING_UBL 1
 //#define MESH_BED_LEVELING
 
 /**
@@ -2082,7 +2082,7 @@
   /**
    * Enable the G26 Mesh Validation Pattern tool.
    */
-  //#define G26_MESH_VALIDATION
+  #define G26_MESH_VALIDATION
   #if ENABLED(G26_MESH_VALIDATION)
     #define MESH_TEST_NOZZLE_SIZE    0.4  // (mm) Diameter of primary nozzle.
     #define MESH_TEST_LAYER_HEIGHT   0.2  // (mm) Default layer height for G26.
@@ -2128,6 +2128,7 @@
   //========================= Unified Bed Leveling ============================
   //===========================================================================
 
+  #define OPTIMIZED_MESH_STORAGE 1
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
   #define MESH_INSET 25              // Set Mesh bounds as an inset region of the bed  // MRiscoC Center mesh
@@ -2145,7 +2146,7 @@
   //#define UBL_Z_RAISE_WHEN_OFF_MESH 2.5 // When the nozzle is off the mesh, this value is used
                                           // as the Z-Height correction value.
 
-  //#define UBL_MESH_WIZARD         // Run several commands in a row to get a complete mesh
+  #define UBL_MESH_WIZARD         // Run several commands in a row to get a complete mesh
 
   /**
    * Probing not allowed within the position of an obstacle.
@@ -2189,7 +2190,7 @@
 #if ENABLED(LCD_BED_LEVELING)
   #define MESH_EDIT_Z_STEP  0.025 // (mm) Step size while manually probing Z axis.
   #define LCD_PROBE_Z_RANGE 4     // (mm) Z Range centered on Z_MIN_POS for LCD Z adjustment
-  //#define MESH_EDIT_MENU        // Add a menu to edit mesh points
+  #define MESH_EDIT_MENU        // Add a menu to edit mesh points
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
@@ -3416,9 +3417,9 @@
   #define HAS_ESDIAG 1
   #define HAS_LOCKSCREEN 1
   #define MESH_EDIT_MENU
-  //#define PREVIEW_MENU_ITEM    // Allows enable/disable Thumbnail preview via menu and C250
+  #define PREVIEW_MENU_ITEM    // Allows enable/disable Thumbnail preview via menu and C250
   #define SHOW_REAL_POS        // Display the real axes position in cartesian printers
-  //#define ACTIVATE_MESH_ITEM   // Allows temporary enabling of mesh leveling
+  #define ACTIVATE_MESH_ITEM   // Allows temporary enabling of mesh leveling
   #define RUNOUT_TUNE_ITEM     // Allows enable/disable the run out filament sensor while printing
   #define PLR_TUNE_ITEM        // Allows enable/disable the power lost recovery while printing
   //#define JD_TUNE_ITEM         // Enable only if Juntion Deviation is enabled
