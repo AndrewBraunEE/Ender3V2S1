@@ -37,6 +37,16 @@
 
 // @section develop
 
+/* From: Andrew Braun, Ender3V2 3D Printer Configuration:
+   Config: Filament Sensor on Z-AXIS PINS
+   BLTouch: Creality Ender 3V2 4.2.2 Board w/ Ender Creality V2 BLTouch
+   Upgraded hardware springs.
+*/
+
+#define USE_PROBE_FOR_Z_HOMING
+
+/* End extra configuration */
+
 /**
  * Configuration Export
  *

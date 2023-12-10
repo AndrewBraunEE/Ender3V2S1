@@ -96,7 +96,9 @@
 // Filament Runout Sensor
 //
 #ifndef FIL_RUNOUT_PIN
-  #define FIL_RUNOUT_PIN                    PA4   // "Pulled-high"
+  //#define FIL_RUNOUT_PIN                    PA4   // "Pulled-high"
+  /* Modified by Andrew Braun: Use Z-Stop Pin */
+  #define FIL_RUNOUT_PIN                    Z_STOP_PIN
 #endif
 
 //
